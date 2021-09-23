@@ -14,15 +14,15 @@ const express = require('express');
 const aplicativo = new express();
 
 // 3. Criando a Rota e retornando alguma informação.
-aplicativo.get('/', function(requisicaoAoServidor, respostaDoServidor) {
+aplicativo.get('/', function (requisicaoAoServidor, respostaDoServidor) {
     // 3.1. Manda uma resposta para o navegador.
-    respostaDoServidor.send('Principal'); 
+    respostaDoServidor.send('Principal');
 });
 
 /* 4. Uma segunda rota */
-aplicativo.get('/contato', function(requisicaoAoServidor, respostaDoServidor) {
+aplicativo.get('/contato', function (requisicaoAoServidor, respostaDoServidor) {
     // 3.1. Manda uma resposta para o navegador.
-    respostaDoServidor.send('Contato'); 
+    respostaDoServidor.send('Contato');
 });
 
 // 4. Inicializar o servidor.
